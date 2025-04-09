@@ -1,1 +1,2 @@
 flask==2.1.2
+flask_mail==0.10.0
